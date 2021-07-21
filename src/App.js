@@ -1,31 +1,38 @@
 import { Component } from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 
 class App extends Component {
-  //ES7 without constructor
+  // with constructor
+  // constructor () {
+  //   super();
+  //   this.state = {
+  //     person: [{ name: "Bill", age: "29" }],
+  //   };
+  // };
+
+  // without constructor
   state = {
-    person: [{ name: "Bill", age: "29" }],
+    monsters: [],
   };
+
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      //response 回傳為 ReadableStream 物件 -> 使用json方法來取得資料
+      .then((response) => response.json())
+      .then((users) => this.setState({ monsters: users }));
+  }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>Hello, my name is JYUN.llll</p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        {this.state.monsters.map((mon) => (
+          <h1 key={mon.id}> {mon.name} </h1>
+        ))}
       </div>
     );
   }
+  com;
 }
 
 export default App;
