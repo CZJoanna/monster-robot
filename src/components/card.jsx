@@ -3,5 +3,14 @@ import React from "react";
 import "./card.styles.css";
 
 export const Card = (props) => {
-  return <div className="card-container">{props.monster.name}</div>;
+  return (
+    <div className="card">
+      <img className="card-img"
+        src={`https://robohash.org/${props.monster.id}?set=set2`}
+        alt="monster"
+      />
+      <h1>{props.monster.name}</h1>
+      <p className="paragragh">{props.monster.email}</p>
+    </div>
+  );
 };
