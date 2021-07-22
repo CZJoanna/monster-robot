@@ -8,4 +8,9 @@
     [center-end] minmax(2rem, 1fr) [full-end];
 }
 
+.search {
+  grid-column: col-start 4 / col-end 4;
+}
+
+
 

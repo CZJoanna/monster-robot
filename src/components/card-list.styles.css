@@ -1,8 +1,9 @@
 .card-list {
   grid-column: center-start / center-end;
   padding: 3.5rem;
- 
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 4rem;
+  grid-column-gap: 2rem;
+  grid-row-gap: 3.5rem;
 }
