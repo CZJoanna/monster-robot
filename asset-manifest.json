@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/monster-robot/static/css/main.c31b3cde.chunk.css",
+    "main.js": "/monster-robot/static/js/main.851f08be.chunk.js",
+    "main.js.map": "/monster-robot/static/js/main.851f08be.chunk.js.map",
+    "runtime-main.js": "/monster-robot/static/js/runtime-main.af8b496e.js",
+    "runtime-main.js.map": "/monster-robot/static/js/runtime-main.af8b496e.js.map",
+    "static/js/2.1b7fd883.chunk.js": "/monster-robot/static/js/2.1b7fd883.chunk.js",
+    "static/js/2.1b7fd883.chunk.js.map": "/monster-robot/static/js/2.1b7fd883.chunk.js.map",
+    "static/js/3.a05d0a34.chunk.js": "/monster-robot/static/js/3.a05d0a34.chunk.js",
+    "static/js/3.a05d0a34.chunk.js.map": "/monster-robot/static/js/3.a05d0a34.chunk.js.map",
+    "index.html": "/monster-robot/index.html",
+    "static/css/main.c31b3cde.chunk.css.map": "/monster-robot/static/css/main.c31b3cde.chunk.css.map",
+    "static/js/2.1b7fd883.chunk.js.LICENSE.txt": "/monster-robot/static/js/2.1b7fd883.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af8b496e.js",
+    "static/js/2.1b7fd883.chunk.js",
+    "static/css/main.c31b3cde.chunk.css",
+    "static/js/main.851f08be.chunk.js"
+  ]
+}
