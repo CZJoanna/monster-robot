@@ -1,6 +1,4 @@
 import React from "react";
-//CSS
-import "./card-list.styles.css";
 //component
 import { Card } from "./card";
 

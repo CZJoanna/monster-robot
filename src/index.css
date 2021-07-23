@@ -16,6 +16,7 @@ body {
 }
 
 /* typhgraphy */
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -23,6 +24,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
+}
+
+.heading-1 {
+  display: inline-block;
+  color:#0ccac4;
+  font-family: "Bigelow rules";
+  font-size: 7rem;
+  letter-spacing: 2px;
 }
 
 .paragragh {
@@ -37,3 +46,93 @@ body {
 .mb-sm {
   margin-bottom: 2rem;
 }
+
+/* layout */
+.App {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(2rem, 1fr) [center-start] repeat(
+      12,
+      [col-start] minmax(min-content, 12rem) [col-end]
+    )
+    [center-end] minmax(2rem, 1fr) [full-end];
+
+  background: linear-gradient(
+    to left,
+    rgba(7, 27, 82, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
+}
+
+.title {
+  grid-column: center-start/ center-end;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.search {
+  grid-column: col-start 6 / col-end 7;
+  text-align: center;
+}
+
+/****************
+* components *
+****************/
+/* search-box */
+
+.search-input {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 150px;
+}
+
+/* card-list */
+
+.card-list {
+  grid-column: center-start / center-end;
+  padding: 3.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 3.5rem;
+}
+
+/* card */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  border: 3px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transition: all 0.25s ease-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color:white;
+  color: #333;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.card-img {
+  width: 50%;
+}
+
+

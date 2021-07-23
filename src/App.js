@@ -1,6 +1,5 @@
 import { Component } from "react";
-//CSS
-import "./App.css";
+
 //component
 import { CardList } from "./components/card-list";
 import { SearchBox } from "./components/search-box";
@@ -35,6 +34,9 @@ class App extends Component {
 
     return (
       <div className="App">
+        <div className="title">
+          <h1 className="heading-1">MONSTER ROLODEX</h1>
+        </div>
         <div className="search">
           <SearchBox
             placeholder="search monsters"

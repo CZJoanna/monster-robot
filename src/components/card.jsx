@@ -1,6 +1,4 @@
 import React from "react";
-//CSS
-import "./card.styles.css";
 
 export const Card = ({item}) => {
   return (
@@ -11,7 +9,7 @@ export const Card = ({item}) => {
         alt="monster"
       />
       <div className="card-info">
-        <h1 className="mb-sm">{item.name}</h1>
+        <h2 className="mb-sm">{item.name}</h2>
         <p className="paragragh">{item.email}</p>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import "./search-box.styles.css";
+
 
 export const SearchBox = ({ placeholder, handleChange }) => {
   return (
