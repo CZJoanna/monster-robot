@@ -9,8 +9,7 @@
 }
 
 .search {
-  grid-column: col-start 4 / col-end 4;
+  grid-column: col-start 6 / col-end 7;
+  padding-top: 3rem;
+  text-align: center;
 }
-
-
-
