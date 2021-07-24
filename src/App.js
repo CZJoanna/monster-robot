@@ -26,6 +26,11 @@ class App extends Component {
       .then((users) => this.setState({ monsters: users }));
   }
 
+  //自定義方法_使用箭頭函式綁定this到元件內
+  handleChange=(e)=> {
+    this.setState({ searchField: e.target.value });
+  }
+
   render() {
     const { monsters, searchField } = this.state;
     const filterMonsters = monsters.filter((monster) =>
@@ -40,9 +45,7 @@ class App extends Component {
         <div className="search">
           <SearchBox
             placeholder="search monsters"
-            handleChange={(e) => {
-              this.setState({ searchField: e.target.value });
-            }}
+            handleChange={this.handleChange}
           ></SearchBox>
         </div>
 
